@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #090c31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease;
+    padding: 10px;
+}
+.calculadora{
+    background: #15173c;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: .5rem;
+}
+.pantalla{
+    grid-column: 1 /-1;
+    background: #090c31;
+    padding: 1.5rem ;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+.btn{
+    background: #15173c;
+    color: #ffffff;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 20px;
+}
+.iconos i{
+    color: #fff;
+    width: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: solid 2px #646464;
+}
+
+.btn:hover{
+    background: #090c31;
+}
+
+#cero{
+    grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background: #e6394a;
+}
+#igual:hover{
+    background: #e65766;
+}
